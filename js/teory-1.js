@@ -241,3 +241,12 @@ const result = numbers
   .reverse();
 
 console.log(result);
+
+// array.flat разглажевает массив
+
+const array = [1, 2, [4, [5]], [6, [7, 8, [9]]]];
+console.log(array.flat(1)); // первая вложенность
+console.log(array.flat(2)); // вторая вложенность
+console.log(array.flat(3)); // третяя вложенность
+
+// array.flatMap flat+map
